@@ -1,0 +1,14 @@
+.container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "navigation bar"
+    "flag"
+    "motto for tuvaluan language week";
+}
+
+.header {
+    grid-area: header;
+}

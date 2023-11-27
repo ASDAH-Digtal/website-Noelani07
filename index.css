@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    "navbar navbar navbar"
+    "image_1 main image_2"
+    "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+   text-align: center;
+   border: 1px solid; 
+   background-color: #ffff66;
+}
+
+.navbar {
+    grid-area: navbar;
+    display: inline;
+    border: 1px solid;
+    text-align: center;
+    padding: 40px;
+}
+.navbar li{
+    float: left;
+}
+
+.navbar a {
+    display: inline;
+    padding: 30px;    
+}
+
+.navbar a:hover {
+    background-color: #ffff66;
+}
+
+.image_1 {
+    grid-area: image_1; 
+    background-color: #66b3ff;
+}
+
+.main {
+    grid-area: main;
+    background-color: #66b3ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.image_2 {
+    grid-area: image_2;
+    background-color:#66b3ff;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #ffff66;
+}

@@ -1,0 +1,12 @@
+.container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "Logo asdah_motto"
+    "Miss_Teulilo's_Bio Miss_Teulilo's_Bio"
+    "Image_1 Image_2"
+    "fact fact"
+    "footer footer";
+}
+

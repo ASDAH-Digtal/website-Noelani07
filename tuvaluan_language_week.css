@@ -1,0 +1,85 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    "navbar navbar navbar"
+    "intro intro intro"
+    "image_1 image_2 image_3"
+    "image_4 image_4 image_4"
+    "image_5 image_5 image_5"
+    "footer footer footer";
+}
+.header {
+    grid-area: header;
+   text-align: center;
+   border: 1px solid; 
+   background-color: #ffff66;
+}
+
+.navbar {
+    grid-area: navbar;
+    display: inline;
+    border: 1px solid;
+    text-align: center;
+    padding: 40px;
+}
+.navbar li{
+    float: left;
+}
+
+.navbar a {
+    display: inline;
+    padding: 30px;    
+}
+
+.navbar a:hover {
+    background-color: #ffff66;
+}
+
+.intro {
+    grid-area: intro;
+    text-align: center;
+    background-color: #ffff66;
+}
+
+.image_1 {
+    grid-area: image_1;
+    background-color:#66b3ff;
+    float: left;
+    /*width: 33.33%;*/
+    padding: 5px;
+}
+.image_2 {
+    grid-area: image_2;
+    background-color:#66b3ff;
+    clear: both;
+    display: table;
+}
+.image_3 {
+    grid-area: image_3;
+    background-color:#66b3ff;
+    display: flex;
+    flex: 33.33%;
+    padding: 5px;
+
+}
+
+.image_4 {
+    grid-area: image_4;
+    background-color:#66b3ff;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_5{
+    grid-area: image_5;
+    background-color:#66b3ff;
+    justify-content: center;
+    align-items: center;
+}
+.footer {
+    grid-area: footer;
+    background-color: #ffff66;
+}
